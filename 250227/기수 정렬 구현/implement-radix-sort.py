@@ -1,3 +1,6 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
 def counting_sort(arr, exp):
     n = len(arr)
     output = [0] * n
@@ -27,8 +30,6 @@ def radix_sort(arr):
         counting_sort(arr, exp)
         exp *= 10
 
-n = int(input())
-arr = list(map(int, input().split()))
-
 radix_sort(arr)
 print(" ".join(map(str, arr)))
+
