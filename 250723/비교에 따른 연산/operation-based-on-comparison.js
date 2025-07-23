@@ -7,5 +7,5 @@ var b = Number(input[1]);
 if (a > b) {
     console.log(`${a*b}`)
 } else {
-    console.log(`${(b/a).toFixed(0)}`)
+    console.log(`${Math.floor(b/a)}`)
 }
