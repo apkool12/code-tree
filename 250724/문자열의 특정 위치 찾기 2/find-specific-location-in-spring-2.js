@@ -1,7 +1,7 @@
 const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim();
 
-const str = ["apple","banana","grape","bluebery","orange"];
+const str = ["apple","banana","grape","blueberry","orange"];
 const arr = new Array();
 
 for (let i = 0; i < str.length; i++) {
