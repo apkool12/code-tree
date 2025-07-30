@@ -5,17 +5,21 @@ const nums = input.split(" ").map(Number);
 
 str = "";
 
-if (nums[1] < nums[2]) {
-    if (nums[0] === nums[1]) {
-        str += 1 + " ";
-    } else {
-        str += 0 + " ";
-    }
+if (nums[0] < nums[1] && nums[0] < nums[1]) {
+    str += 1 + " ";
 } else {
-    if (nums[0] === nums[2]) {
-        str += 1 + " ";
+    if (nums[1] < nums[2]) {
+        if (nums[0] === nums[1]) {
+            str += 1 + " ";
+        } else {
+            str += 0 + " ";
+        }
     } else {
-        str += 0 + " ";
+        if (nums[0] === nums[2]) {
+            str += 1 + " ";
+        } else {
+            str += 0 + " ";
+        }
     }
 }
 
