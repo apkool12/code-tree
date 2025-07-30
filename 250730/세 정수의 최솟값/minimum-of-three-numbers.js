@@ -1,28 +1,7 @@
 const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim();
+const [a, b, c] = input.split(" ").map(Number);
 
-const nums = input.split(" ").map(Number);
+const min = a < b ? (a < c ? a : c) : (b < c ? b : c);
 
-if (nums[0] > nums[1] && nums[0] > nums[2]) {
-    if (nums[1] > nums[2]) {
-        console.log(nums[2]);
-    } else {
-        console.log(nums[1]);
-    }
-}
-
-if (nums[1] > nums[0] && nums[1] > nums[2]) {
-    if (nums[0] > nums[2]) {
-        console.log(nums[2]);
-    } else {
-        console.log(nums[0]);
-    }
-}
-
-if (nums[2] > nums[0] && nums[2] > nums[1]) {
-    if (nums[0] > nums[1]) {
-        console.log(nums[1]);
-    } else {
-        console.log(nums[0]);
-    }
-}
+console.log(min);
