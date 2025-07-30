@@ -12,8 +12,8 @@ if (nums[0] > nums[1] && nums[0] > nums[2]) {
 }
 
 if (nums[1] > nums[0] && nums[1] > nums[2]) {
-    if (nums[0] > nums[1]) {
-        console.log(nums[1]);
+    if (nums[0] > nums[2]) {
+        console.log(nums[2]);
     } else {
         console.log(nums[0]);
     }
