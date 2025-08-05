@@ -1,10 +1,10 @@
 const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim();
 
-const arr = []
+const arr = [];
 
 for (let i = 0; i < 8; i++) {
-    arr.append(input);
+    arr.push(input);
 }
 
 console.log(arr.join(""));
