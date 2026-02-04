@@ -7,7 +7,7 @@ let m = Number(input[1]);
 function gcd(n,m) {
     let z = Math.min(n,m);
     let answer = ''
-    for (let i = 0; i < z; i++) {
+    for (let i = 0; i <= z; i++) {
         if (n % i === 0 && m % i === 0) {
             answer = i;
         }
