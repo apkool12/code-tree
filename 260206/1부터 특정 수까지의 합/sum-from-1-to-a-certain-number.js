@@ -1,14 +1,9 @@
 const fs = require("fs");
-const input = fs.readFileSync(0).toString().trim().split('\n');
-const n = Number(input[0]);
+const n = Number(fs.readFileSync(0).toString().trim());
 
-function func(n) {
-    let total = 0
-    for (let i = 1; i <= n; i++) {
-        total += (i / 10)
-    }
-    
-    return total
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+    sum += i;
 }
 
-console.log(func(n))
+console.log(Math.floor(sum / 10));
